@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad 3</title>
+</head>
+<body>
+    
+    <script>
+        //Trojan Bogacki 2pir
+        let a = Math.floor(Math.random()*100) + 1;
+        let b = Number(prompt("Spróbuj odgadnąć o jakiej liczbie myślę"));
+        let liczbaprob = 1;
+
+        while(a!=b){
+        if(a<b) b = Number(prompt("Za duża! spróbuj mniejszą"));
+        else if(a>b) b = Number(prompt("Za mała! spróbuj większą"));
+        liczbaprob++;
+        }
+
+        if(a==b) document.write("Gratulacje zgadnąłęś moją liczbę: " + a + " Musiałeś starać się " + liczbaprob + " razy.");
+
+    </script>
+
+</body>
+</html>
